@@ -2,16 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/iphonewallpaper"
         android:scaleType="centerCrop"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/honor"
         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Hello"
+        android:textSize="100sp"
+        android:background="@color/design_default_color_primary"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="World"
+        android:textSize="100sp"
+        android:background="@color/design_default_color_primary_dark"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Namaste"
+        android:textSize="100sp"
+        android:background="@color/design_default_color_primary"
+        />
+
+
 
 
 
