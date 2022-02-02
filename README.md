@@ -24,4 +24,4 @@
 <h3 align="left">The 5th step in learning Android App Development [Part2_1] </h3>
 
 ![Learing Android App Development(2(a))](https://user-images.githubusercontent.com/98050834/152206971-817e0cba-a5ff-4728-8e8a-24b9740bc700.png)
-![Learing Android App Development(2(A(1)))](https://user-images.githubusercontent.com/98050834/152220065-27bea5a7-eff7-483a-b2f8-71de715313a2.png)
+![Learing Android App Development(2(A(1)))](https://user-images.githubusercontent.com/98050834/152220397-594f17f5-5595-46b6-9078-e22430c78fe1.png)
