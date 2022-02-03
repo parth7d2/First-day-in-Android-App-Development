@@ -28,4 +28,4 @@
 
 <h3 align="left">The 7th step in learning Android App Development [Part2_2] </h3>
 
-![Learing Android App Development(2(B))](https://user-images.githubusercontent.com/98050834/152312987-2b97ed1c-ca3b-45e4-a230-d62f0099c1ef.png)
+![Learing Android App Development(2(B))](https://user-images.githubusercontent.com/98050834/152314321-2e2c7931-0950-4a96-bc4b-559bb6b85d15.png)
