@@ -30,3 +30,5 @@
 
 ![Learing Android App Development(2(B))](https://user-images.githubusercontent.com/98050834/152314321-2e2c7931-0950-4a96-bc4b-559bb6b85d15.png)
 ![Learing Android App Development(2(B(1)))](https://user-images.githubusercontent.com/98050834/152315207-63865024-1850-4725-9a54-fdac5319c9f8.png)
+
+<h3 align="left">The 7th step in learning Android App Development [Part3_1] </h3>
