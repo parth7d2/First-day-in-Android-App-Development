@@ -33,3 +33,6 @@
 
 ![Learing Android App Development3(A(1)))](https://user-images.githubusercontent.com/98050834/152344251-0d30f1dc-e422-40a5-afcc-fb6e26bf11aa.png)
 
+<h3 align="left">The 9th step in learning Android App Development [Part3_2] </h3>
+
+![Learing Android App Development3(B))](https://user-images.githubusercontent.com/98050834/152578620-1e89c7b5-d990-47ef-ad0b-771d3516cfbf.png)
