@@ -24,9 +24,12 @@
 <h3 align="left">The 6th step in learning Android App Development [Part2_1] </h3>
 
 ![Learing Android App Development(2(a))](https://user-images.githubusercontent.com/98050834/152206971-817e0cba-a5ff-4728-8e8a-24b9740bc700.png)
-![Learing Android App Development(2(A(1)))](https://user-images.githubusercontent.com/98050834/152220397-594f17f5-5595-46b6-9078-e22430c78fe1.png)
 
 <h3 align="left">The 7th step in learning Android App Development [Part2_2] </h3>
 
 ![Learing Android App Development(2(B))](https://user-images.githubusercontent.com/98050834/152314321-2e2c7931-0950-4a96-bc4b-559bb6b85d15.png)
-![Learing Android App Development(2(B(1)))](https://user-images.githubusercontent.com/98050834/152315207-63865024-1850-4725-9a54-fdac5319c9f8.png)
+
+<h3 align="left">The 8th step in learning Android App Development [Part3_1] </h3>
+
+![Learing Android App Development3(A(1)))](https://user-images.githubusercontent.com/98050834/152344251-0d30f1dc-e422-40a5-afcc-fb6e26bf11aa.png)
+
