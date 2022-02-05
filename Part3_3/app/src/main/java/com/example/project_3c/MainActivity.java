@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayMessage(String message) {
-        TextView priceTextView = (TextView) findViewById(R.id.price_value_view);
-        priceTextView.setText(message);
+        TextView orderSummaryView = (TextView) findViewById(R.id.order_summary_value_view);
+        orderSummaryView.setText(message);
     }
 
     private void displayQuantity(int numbers) {
