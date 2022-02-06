@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -17,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
 
 
     // When we click plus button
@@ -38,13 +38,22 @@ public class MainActivity extends AppCompatActivity {
 
     // When we click order button
     public void submitOrder(View view) {
+        // tea checkbox;
+        CheckBox teaCheckBox = (CheckBox) findViewById(R.id.tea_checkbox_view);
+        boolean hasTea = teaCheckBox.isChecked();
+
+        // coffee checkbox;
+        CheckBox coffeeCheckBox = (CheckBox) findViewById(R.id.coffee_checkbox_view);
+        boolean hasCoffee = coffeeCheckBox.isChecked();
+
         int price = calculatePrice();
-        displayMessage(createOrderSummary(price));
+        displayMessage(createOrderSummary(price, hasTea, hasCoffee));
     }
 
-    private String createOrderSummary(int price) {
+    private String createOrderSummary(int price, boolean addTea, boolean hasCoffee) {
         String priceMessage = "Name : Parth7D2";
-        priceMessage += "\nAdd tea?";
+        priceMessage += "\nAdd tea? " + addTea;
+        priceMessage += "\nAdd coffee? " + hasCoffee;
         priceMessage += "\nQuantity : " + quantity;
         priceMessage += "\nTotal : $" + price;
         priceMessage += "\nThank You";
@@ -63,4 +72,5 @@ public class MainActivity extends AppCompatActivity {
         // Setting new value to the quantity text view
         quantityTextView.setText(" " + numbers);
     }
+
 }
