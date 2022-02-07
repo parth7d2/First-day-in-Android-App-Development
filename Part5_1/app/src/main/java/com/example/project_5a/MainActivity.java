@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -21,21 +22,35 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     // When we click plus button
     public void increment(View view) {
+        if (quantity == 100) {
+            Toast.makeText(this, "You can't have more then 100 items", Toast.LENGTH_SHORT).show();
+            return;
+        }
         quantity = quantity + 1;
         displayQuantity(quantity);
     }
 
     // When we click minus button
     public void decrement(View view) {
+        if (quantity == 0) {
+          Toast.makeText(this,"You can't have less then 1 item",Toast.LENGTH_SHORT).show();
+          return;
+        }
         quantity = quantity - 1;
         displayQuantity(quantity);
     }
 
-    private int calculatePrice() {
-        return quantity * 5;
+    private int calculatePrice(boolean addTea, boolean addCoffee) {
+        int baseprice = 5;
+        if (addTea) {
+            baseprice += 2;
+        }
+        if (addCoffee) {
+            baseprice += 1;
+        }
+        return quantity * baseprice;
     }
 
     // When we click order button
@@ -51,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
         CheckBox coffeeCheckBox = (CheckBox) findViewById(R.id.coffee_checkbox_view);
         boolean hasCoffee = coffeeCheckBox.isChecked();
 
-        int price = calculatePrice();
-        displayMessage(createOrderSummary(name,price, hasTea, hasCoffee));
+        int price = calculatePrice(hasTea, hasCoffee);
+        displayMessage(createOrderSummary(name, price, hasTea, hasCoffee));
     }
 
     private String createOrderSummary(String name, int price, boolean addTea, boolean hasCoffee) {
