@@ -52,10 +52,10 @@ public class MainActivity extends AppCompatActivity {
         boolean hasCoffee = coffeeCheckBox.isChecked();
 
         int price = calculatePrice();
-        displayMessage(createOrderSummary(price, hasTea, hasCoffee, name));
+        displayMessage(createOrderSummary(name,price, hasTea, hasCoffee));
     }
 
-    private String createOrderSummary(int price, boolean addTea, boolean hasCoffee, String name) {
+    private String createOrderSummary(String name, int price, boolean addTea, boolean hasCoffee) {
         String priceMessage = "Name : " + name;
         priceMessage += "\nAdd tea? " + addTea;
         priceMessage += "\nAdd coffee? " + hasCoffee;
