@@ -57,25 +57,30 @@ public class MainActivity extends AppCompatActivity {
 
     // When we click order button
     public void submitOrder(View view) {
-//        // name edittext;
-//        EditText nameEditText = (EditText) findViewById(R.id.name_edit_view);
-//        String name = nameEditText.getText().toString();
-//        // tea checkbox;
-//        CheckBox teaCheckBox = (CheckBox) findViewById(R.id.tea_checkbox_view);
-//        boolean hasTea = teaCheckBox.isChecked();
-//
-//        // coffee checkbox;
-//        CheckBox coffeeCheckBox = (CheckBox) findViewById(R.id.coffee_checkbox_view);
-//        boolean hasCoffee = coffeeCheckBox.isChecked();
-//
-//        int price = calculatePrice(hasTea, hasCoffee);
-//        displayMessage(createOrderSummary(name, price, hasTea, hasCoffee));
-        Intent itnt = new Intent(Intent.ACTION_VIEW);
-        itnt.setData(Uri.parse("geo :47.6, -123.3"));
-        if(itnt.resolveActivity(getPackageManager())!=null)
+        // name edittext;
+        EditText nameEditText = (EditText) findViewById(R.id.name_edit_view);
+        String name = nameEditText.getText().toString();
+        // tea checkbox;
+        CheckBox teaCheckBox = (CheckBox) findViewById(R.id.tea_checkbox_view);
+        boolean hasTea = teaCheckBox.isChecked();
+
+        // coffee checkbox;
+        CheckBox coffeeCheckBox = (CheckBox) findViewById(R.id.coffee_checkbox_view);
+        boolean hasCoffee = coffeeCheckBox.isChecked();
+
+        int price = calculatePrice(hasTea, hasCoffee);
+
+        String priceMessage = createOrderSummary(name, price, hasTea, hasCoffee);
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_SUBJECT, "just java order for" + name );
+        intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
+        if(intent.resolveActivity(getPackageManager()) != null)
         {
-            startActivity(itnt);
+            startActivity(intent);
         }
+
     }
 
     private String createOrderSummary(String name, int price, boolean addTea, boolean hasCoffee) {
@@ -88,10 +93,6 @@ public class MainActivity extends AppCompatActivity {
         return priceMessage;
     }
 
-    public void displayMessage(String message) {
-        TextView orderSummaryView = (TextView) findViewById(R.id.order_summary_value_view);
-        orderSummaryView.setText(message);
-    }
 
     private void displayQuantity(int numbers) {
         // Finding the quantity initial value

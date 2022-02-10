@@ -86,23 +86,7 @@
 
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/order_summary_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
-            android:text="Order Summary"
-            android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/order_summary_value_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="20dp"
-            android:text="0"
-            android:textSize="30sp" />
 
         <Button
             android:id="@+id/order_button_view"
