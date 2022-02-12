@@ -3,7 +3,6 @@ package com.example.android.miwok;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
-import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -29,20 +28,21 @@ public class NumberActivity extends AppCompatActivity {
 //        words[9] = "Ten"; ----> or
 //        String[] words = {"One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten"};
 
-        ArrayList<String> words = new ArrayList<String>();
-        words.add("One");
-        words.add("Two");
-        words.add("Three");
-        words.add("Four");
-        words.add("Five");
-        words.add("Six");
-        words.add("Seven");
-        words.add("Eight");
-        words.add("Nine");
-        words.add("Ten");
+        ArrayList<Word> words = new ArrayList<Word>();
+        words.add(new Word ("One", "Ek"));
+        words.add(new Word ("Two", "Do"));
+        words.add(new Word ("Three", "Tin"));
+        words.add(new Word ("Four", "Char"));
+        words.add(new Word ("Five", "Panch"));
+        words.add(new Word ("Six", "Che"));
+        words.add(new Word ("Seven", "Sat"));
+        words.add(new Word ("Eight", "Ad"));
+        words.add(new Word ("Nine", "Nav"));
+        words.add(new Word ("Ten", "Das"));
 
-        ArrayAdapter<String> itemAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,words);
-        GridView gridView = (GridView) findViewById(R.id.list);
-        gridView.setAdapter(itemAdapter);
+
+        WordAdaptor Adapter = new WordAdaptor(this,words);
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(Adapter);
     }
 }
