@@ -26,16 +26,16 @@ public class NumberActivity extends AppCompatActivity {
 //        String[] words = {"One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten"};
 
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word ("One", "Ek"));
-        words.add(new Word ("Two", "Do"));
-        words.add(new Word ("Three", "Tin"));
-        words.add(new Word ("Four", "Char"));
-        words.add(new Word ("Five", "Panch"));
-        words.add(new Word ("Six", "Che"));
-        words.add(new Word ("Seven", "Sat"));
-        words.add(new Word ("Eight", "Ad"));
-        words.add(new Word ("Nine", "Nav"));
-        words.add(new Word ("Ten", "Das"));
+        words.add(new Word ("One", "Ek", R.drawable.number_one));
+        words.add(new Word ("Two", "Do", R.drawable.number_two));
+        words.add(new Word ("Three", "Tin", R.drawable.number_three));
+        words.add(new Word ("Four", "Char", R.drawable.number_four));
+        words.add(new Word ("Five", "Panch", R.drawable.number_five));
+        words.add(new Word ("Six", "Che", R.drawable.number_six));
+        words.add(new Word ("Seven", "Sat", R.drawable.number_seven));
+        words.add(new Word ("Eight", "Ad", R.drawable.number_eight));
+        words.add(new Word ("Nine", "Nav", R.drawable.number_nine));
+        words.add(new Word ("Ten", "Das", R.drawable.number_ten));
 
 
         WordAdaptor Adapter = new WordAdaptor(this,words);
