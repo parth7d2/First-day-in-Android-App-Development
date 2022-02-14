@@ -20,7 +20,7 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word ("Mother", "Mammi", R.drawable.family_mother));
         words.add(new Word ("Son", "Bhai", R.drawable.family_younger_brother));
         words.add(new Word ("Daughter", "Bahen", R.drawable.family_older_sister));
-        WordAdaptor Adapter = new WordAdaptor(this,words);
+        WordAdaptor Adapter = new WordAdaptor(this,words, R.color.category_family);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(Adapter);
     }
