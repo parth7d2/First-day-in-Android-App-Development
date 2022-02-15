@@ -54,8 +54,23 @@ public class NumberActivity extends AppCompatActivity {
                 Word word = words.get(position);
                 mMidiaPlayer = MediaPlayer.create(NumberActivity.this, word.getmAudioResourseId());
                 mMidiaPlayer.start();
+                mMidiaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        releseMediaPlayer();
+                    }
+                });
             }
         });
+    }
+
+    private void releseMediaPlayer()
+    {
+        if(mMidiaPlayer != null)
+        {
+            mMidiaPlayer.release();
+            mMidiaPlayer = null;
+        }
     }
 
 }
