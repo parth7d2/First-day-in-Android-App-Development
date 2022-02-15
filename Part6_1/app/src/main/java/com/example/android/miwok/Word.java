@@ -5,21 +5,25 @@ public class Word {
     private String mDefaultTranlation;
     private String mMinwokTranlation;
     private int mImageResourseId = NO_IMAGE_PROVIDED;
+    private int mAudioResourseId;
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
 
-    public Word(String defaultTranlation, String minwokTranlation)
+    public Word(String defaultTranlation, String minwokTranlation, int audioResourseId)
     {
         mDefaultTranlation = defaultTranlation;
         mMinwokTranlation = minwokTranlation;
+        mAudioResourseId = audioResourseId;
     }
 
-    public Word(String defaultTranlation, String minwokTranlation, int imageResoureseId)
+    public Word(String defaultTranlation, String minwokTranlation, int imageResoureseId, int audioResourseId)
     {
         mDefaultTranlation = defaultTranlation;
         mMinwokTranlation = minwokTranlation;
         mImageResourseId = imageResoureseId;
+        mAudioResourseId = audioResourseId;
+
     }
 
     public String getmDefaultTranlation()
@@ -33,6 +37,8 @@ public class Word {
     }
 
     public int getmImageResourseId(){return mImageResourseId;}
+
+    public int getmAudioResourseId(){return mAudioResourseId;}
 
     public boolean hasImage()
     {
