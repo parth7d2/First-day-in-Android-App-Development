@@ -14,6 +14,13 @@ public class NumberActivity extends AppCompatActivity {
 
     private MediaPlayer mMidiaPlayer;
 
+    private MediaPlayer.OnCompletionListener mCompletionListener = new MediaPlayer.OnCompletionListener() {
+        @Override
+        public void onCompletion(MediaPlayer mediaPlayer) {
+            releseMediaPlayer();
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,16 +59,20 @@ public class NumberActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Word word = words.get(position);
+
+                releseMediaPlayer();
+
                 mMidiaPlayer = MediaPlayer.create(NumberActivity.this, word.getmAudioResourseId());
                 mMidiaPlayer.start();
-                mMidiaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
-                    @Override
-                    public void onCompletion(MediaPlayer mediaPlayer) {
-                        releseMediaPlayer();
-                    }
-                });
+                mMidiaPlayer.setOnCompletionListener(mCompletionListener);
             }
         });
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        releseMediaPlayer();
     }
 
     private void releseMediaPlayer()
