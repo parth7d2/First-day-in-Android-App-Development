@@ -53,7 +53,6 @@ public class WordAdaptor extends ArrayAdapter<Word> {
 
         return listItemView;
     }
-// Hello world
-
+//Hello World
 
 }
