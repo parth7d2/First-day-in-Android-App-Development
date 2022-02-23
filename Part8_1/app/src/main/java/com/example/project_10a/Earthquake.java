@@ -2,19 +2,19 @@ package com.example.project_10a;
 
 public class Earthquake {
 
-    private String mMagnitude;
+    private Double mMagnitude;
     private String mLocation;
     private String mData;
     private long mTimeInMillisecond;
 
-    public Earthquake(String magnitude, String location, long timeInMilliseconds)
+    public Earthquake(Double magnitude, String location, long timeInMilliseconds)
     {
         mMagnitude = magnitude;
         mLocation = location;
         mTimeInMillisecond = timeInMilliseconds;
     }
 
-    public String getmMagnitude()
+    public Double getmMagnitude()
     {
         return mMagnitude;
     }
