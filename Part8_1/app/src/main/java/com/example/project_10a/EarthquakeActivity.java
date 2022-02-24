@@ -35,7 +35,7 @@ public class EarthquakeActivity extends AppCompatActivity {
 
         earthquakeListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long l) {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 // Find the current earthquake that was clicked on
                 Earthquake currentEarthquake = adapter.getItem(position);
