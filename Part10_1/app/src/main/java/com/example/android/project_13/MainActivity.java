@@ -2,8 +2,11 @@ package com.example.android.project_13;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import java.nio.channels.AsynchronousChannelGroup;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,11 +19,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Perform the HTTP request for earthquake data and process the response.
-        Event earthquake = Utils.fetchEarthquakeData(USGS_REQUEST_URL);
+    // Create an{@link AsyncTask} to perform the HTTP request to the given URL
+    // on a background thread. When the result is received on the main UI thread,
+    // then update the UI.
 
-        // Update the information displayed to the user.
-        updateUi(earthquake);
+        EarthquakeAsyncTask task = new EarthquakeAsyncTask();
+        task.execute(USGS_REQUEST_URL);
     }
 
     /**
@@ -35,5 +39,21 @@ public class MainActivity extends AppCompatActivity {
 
         TextView magnitudeTextView = (TextView) findViewById(R.id.perceived_magnitude);
         magnitudeTextView.setText(earthquake.perceivedStrength);
+    }
+
+    private class EarthquakeAsyncTask extends AsyncTask<String, Void, Event>
+    {
+
+        protected Event doInBackground(String... urls) {
+            // Perform the HTTP request for earthquake data and process the response.
+            Event result = Utils.fetchEarthquakeData(urls[0]);
+            return result;
+        }
+
+        protected void onPostExecute(Event result)
+        {
+            // Update the information displayed to the user.
+            updateUi(result);
+        }
     }
 }

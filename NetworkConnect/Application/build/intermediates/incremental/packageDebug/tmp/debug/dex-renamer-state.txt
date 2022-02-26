@@ -1,0 +1,4 @@
+#Sat Feb 26 17:30:18 IST 2022
+base.0=D\:\\Android Studio(learning)\\Part 1\\NetworkConnect\\Application\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
