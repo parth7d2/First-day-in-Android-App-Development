@@ -91,6 +91,9 @@ public class EditorActivity extends AppCompatActivity {
     private void insertPet()
     {
         String nameString = mNameEditText.getText().toString().trim();
+        String breadString = mBreedEditText.getText().toString().trim();
+        String weightString = mWeightEditText.getText().toString().trim();
+        int weight = Integer.parseInt(weightString);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
