@@ -1,4 +1,4 @@
-# First-day-in-Android App Development 
+# First-day-in-Android App Development
 
 <h3 align="left">The 1st step in learning Android App Development [Part1_1]</h3> 
 
@@ -12,6 +12,7 @@
 
 ![Learing Android App Development(2(2))](https://user-images.githubusercontent.com/98050834/151711987-e54facd2-a1d0-4df5-b079-93238ee943ad.png)
 ![Learing Android App Development(2(4))](https://user-images.githubusercontent.com/98050834/151712008-0e339871-6921-4400-ba44-a6e26beb4da3.png)
+
 <h3 align="left">The 4th step in learning Android App Development [Part1_4] </h3>
 
 ![Learing Android App Development(2(5))](https://user-images.githubusercontent.com/98050834/151831611-de23d6fe-c244-48c4-978f-a534c6bdcffd.png)
