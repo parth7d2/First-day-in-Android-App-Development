@@ -38,12 +38,13 @@ public class CatalogActivity extends AppCompatActivity {
         });
 
         mDbHelper = new PetDbHelper(this);
-        displayDatabaseInfo();
+//        SQLiteDatabase db = mDbHelper.getReadableDatabase();
+//        displayDatabaseInfo();
 
     }
 
     /**
-     * Temparary helper method to display information in the onscreen TextView about the state of
+     * Temporary helper method to display information in the onscreen TextView about the state of
      * the pets database.
      */
     private void displayDatabaseInfo()
