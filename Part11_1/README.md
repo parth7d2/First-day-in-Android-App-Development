@@ -2,7 +2,7 @@
 Quake Report App
 ===================================
 
-# Screenshots
+# Screenshot
 
 <img src="https://user-images.githubusercontent.com/98050834/169729332-a2b140b5-32bf-437a-98cc-bd45643c8534.jpg" 
 style="width:24%;
