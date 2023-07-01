@@ -1,55 +1,40 @@
 
 Quake Report App
 ===================================
+This app shows the list of recent earthquakes in the world from the US Geological Survey (USGS).
 
-# Screenshot
+## Thank You!
+Please ⭐️ this repo and share it with others
 
-<img src="https://user-images.githubusercontent.com/98050834/169729332-a2b140b5-32bf-437a-98cc-bd45643c8534.jpg" 
-style="width:24%;
-       height:24%
-       display: block;
-       " />
-       
-This app displays a list of recent earthquakes in the world
-from the U.S. Geological Survey (USGS) organization.
+## Screenshots
+<p>
+<img width="400" alt="Screenshot 2023-06-19 at 12 37 10 PM" src="https://github.com/parth7d2/Let-s-start-android-app-development/assets/98050834/52c51569-e4ef-4789-a66a-36325705aeb1">
+</p>
 
-Used in a Udacity course in the Beginning Android Nanodegree.
+## Requirements 🔧
+* Android 5(Lollipop) or higher
+* JavaVersion.VERSION_1_8 or higher
+* Target Android 12(Snow Cone)
 
-More info on the USGS Earthquake API available at:
-https://earthquake.usgs.gov/fdsnws/event/1/
+## Installation 🔌
+1. Press the **Fork** button (top right the page) to save copy of this project on your account.
 
+2. Download the repository files (project) from the download section or clone this project by typing in the bash the following command:
 
-Getting Started
----------------
+       https://github.com/parth7d2/Let-s-start-android-app-development.git
+   but this is all learnig projects you can go
+   https://github.com/parth7d2/Let-s-start-android-app-development/tree/master/Part11_1
+   this particular file.
 
-This sample uses the Gradle build system. To build this project, use the
-"gradlew build" command or use "Import Project" in Android Studio.
+4. Imported it in Android Studio or any other Java IDE.
+5. Run the application :D
 
-Support
--------
+## Contributing 💡
+If you want to contribute to this project and make it better with new ideas, your pull request is very welcomed.
+If you find any issue just put it in the repository issue section, thank you.
 
-- Google+ Community: https://plus.google.com/communities/105153134372062985968
-- Stack Overflow: http://stackoverflow.com/questions/tagged/android
-
-Patches are encouraged, and may be submitted by forking this project and
-submitting a pull request through GitHub. Please see CONTRIBUTING.md for more details.
-
-License
--------
-
-Copyright 2016 The Android Open Source Project, Inc.
-
-Licensed to the Apache Software Foundation (ASF) under one or more contributor
-license agreements.  See the NOTICE file distributed with this work for
-additional information regarding copyright ownership.  The ASF licenses this
-file to you under the Apache License, Version 2.0 (the "License"); you may not
-use this file except in compliance with the License.  You may obtain a copy of
-the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-License for the specific language governing permissions and limitations under
-the License.
+ ## Questions?🤔
+ Hit me on
+ 
+<a href="https://twitter.com/parth7d2"><img src="https://user-images.githubusercontent.com/35039342/55471524-8e24cb00-5627-11e9-9389-58f3d4419153.png" width="60"></a>
+<a href="https://linkedin.com/in/parth02"><img src="https://user-images.githubusercontent.com/35039342/55471530-94b34280-5627-11e9-8c0e-6fe86a8406d6.png" width="60"></a>
